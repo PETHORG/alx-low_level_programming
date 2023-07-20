@@ -2,8 +2,8 @@
 
 /**
  * _isupper - checks for uppercase charcter
- *@c: function's parameter
-
+ * @c: function's parameter
+ *
  * Return: 1 if c is uppercase, 0 otherwise
  */
 
