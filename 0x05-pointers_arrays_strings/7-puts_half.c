@@ -37,7 +37,7 @@ void puts_half(char *str)
 	{
 		div = len / 2;
 
-		for (i = 1; i <= div; i++)
+		for (i = div; str[i] != '\0'; i++)
 		{
 			_putchar(str[div]);
 			div++;
