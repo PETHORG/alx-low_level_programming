@@ -52,7 +52,7 @@ void puts_half(char *str)
 		{
 			_putchar(str[div - 1]);
 
-			div += 2;
+			div += 1;
 		}
 	}
 	_putchar('\n');
