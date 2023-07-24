@@ -50,7 +50,7 @@ void puts_half(char *str)
 
 		for (i = div; str[i] != '\0'; i++)
 		{
-			_putchar(str[div - 1]);
+			_putchar(str[div - 2]);
 
 			div += 1;
 		}
