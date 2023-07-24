@@ -40,6 +40,7 @@ void puts_half(char *str)
 		for (i = 1; i <= div; i++)
 		{
 			_putchar(str[div]);
+			div++;
 		}
 	}
 	else
