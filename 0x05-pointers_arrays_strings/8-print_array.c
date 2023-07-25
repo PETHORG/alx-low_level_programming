@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_array - prints the element of an array seprated by a comma
@@ -15,16 +14,15 @@ void print_array(int *a, int n)
 	{
 		for (i = 1; i <= n; i++)
 		{
-			if (i == n)
+			if (i < n)
 			{
-				printf("%d", a[i]);
+				printf("%d, ", a[i]);
 			}
 			else
 			{
-				printf("%d, ", a[i]);
+				printf("%d", a[i]);
 			}
 		}
 		putchar('\n');
 	}
-	putchar('\n');
 }
