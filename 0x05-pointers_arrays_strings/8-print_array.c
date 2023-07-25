@@ -14,11 +14,11 @@ void print_array(int *a, int n)
 	{
 		if (i == n)
 		{
-			_putchar(a[i]);
+			_putchar('0' + a[i]);
 		}
 		else
 		{
-			_putchar(a[i]);
+			_putchar('0' + a[i]);
 			_putchar(',');
 			_putchar(' ');
 		}
