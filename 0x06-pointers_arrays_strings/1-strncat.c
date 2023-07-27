@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strlen - counts the length of string
  * @s: string to be counted
@@ -21,21 +20,21 @@ int _strlen(char *s)
 }
 
 /**
- * _strcat - concatenate two strings
+ * _strncat - concatenate two strings, with n bytes added
  * @dest: main string
  * @src: string to be added
+ * @n: number of bytes
  *
- * Return: pointer to character
+ * Return: pointer to string(dest)
  */
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n);
 {
 	int i, len, len2;
 
 	len = _strlen(dest);
-	len2 = _strlen(src);
 
-	for (i = 0; i < len2; i++)
+	for (i = 0; i < n; i++)
 	{
 		dest[len] = src[i];
 		len++;
