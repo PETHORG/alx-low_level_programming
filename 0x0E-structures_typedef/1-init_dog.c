@@ -9,7 +9,9 @@
  * @owner: string cotaining name of owner
  */
 
-void init_dog(sd == NULL)
+void init_dog(struct dog *d, char *name, float age, char *owner)
+{
+	(d == NULL)
 		return;
 
 	d->name = name;
