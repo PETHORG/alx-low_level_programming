@@ -40,20 +40,20 @@ char *str_concat(char *s1, char *s2)
 	if (cncat == NULL)
 		return (NULL);
 
-	if (s1 == NULL && s2 == NULL)
-	{
-		s1 = " ";
-		s2 = " ";
-	}
-
 	for (i = 0; i < _strlen(s1); i++)
 	{
+		if (s1 == NULL)
+			s1 = " ";
+
 		cncat[i] = s1[i];
 		len_count++;
 	}
 
 	for (i = 0; i < _strlen(s2); i++)
 	{
+		if (s2 == NULL)
+			s2 = " ";
+
 		cncat[len_count] = s2[i];
 		len_count++;
 	}
