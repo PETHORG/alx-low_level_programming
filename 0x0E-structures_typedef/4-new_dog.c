@@ -27,10 +27,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (name != NULL)
 	{
-		dog_cpy->name = malloc(strlen(name) + 1);
+		cpy_of_name = malloc(strlen(name) + 1);
 		
 		/*check memory allocation worked*/
-		if (dog_cpy->name == NULL)
+		if (cpy_of_name == NULL)
 		{
 			free(dog_cpy);
 			return (NULL);
@@ -44,10 +44,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (owner != NULL)
 	{
-		dog_cpy->owner = malloc(strlen(owner) + 1);
+		cpy_of_owner = malloc(strlen(owner) + 1);
 		
 		/*check memory allocation worked*/
-		if (dog_cpy->owner == NULL)
+		if (cpy_of_owner == NULL)
 		{
 			free(dog_cpy);
 			return (NULL);
