@@ -34,6 +34,11 @@ char *str_concat(char *s1, char *s2)
 	int i, len_count;
 	char *cncat;
 
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
 	len_count = 0;
 	cncat = malloc((_strlen(s1) + _strlen(s2) + 1) * sizeof(char));
 
@@ -42,18 +47,12 @@ char *str_concat(char *s1, char *s2)
 
 	for (i = 0; i < _strlen(s1); i++)
 	{
-		if (s1 == NULL)
-			s1 = " ";
-
 		cncat[i] = s1[i];
 		len_count++;
 	}
 
 	for (i = 0; i < _strlen(s2); i++)
 	{
-		if (s2 == NULL)
-			s2 = " ";
-
 		cncat[len_count] = s2[i];
 		len_count++;
 	}
