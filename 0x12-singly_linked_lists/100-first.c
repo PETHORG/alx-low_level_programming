@@ -1,4 +1,4 @@
-#include "main"
+#include "lists.h"
 
 /**
  * execute_before_main - allows this function to be interpreted before main

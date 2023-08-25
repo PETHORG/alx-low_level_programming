@@ -4,7 +4,7 @@
  * add_node_end - adds node to the end of
  *  a single linked list
  *  @head: address of the first node
- *  @str: string to be printed, an element of the linked 
+ *  @str: string to be printed, an element of the linked
  *  list
  *
  *  Return: returns the new node
@@ -22,7 +22,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	new_st = malloc(sizeof(list_t));
 	if (new_st == NULL)
 		return (NULL);
-	
+
 	new_st->str = strdup(str);
 
 	for (i = 0; str[i] != '\0'; i++)
@@ -42,7 +42,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		pt = *head;
 		while (pt->next != NULL)
 			pt = pt->next;
-		
+
 		pt->next = new_st;
 	}
 

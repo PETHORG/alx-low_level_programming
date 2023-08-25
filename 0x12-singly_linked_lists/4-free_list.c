@@ -2,7 +2,7 @@
 
 /**
  * free_list - frees every list structured in a memory
- * @head: address of the first node 
+ * @head: address of the first node
  */
 
 void free_list(list_t *head)
@@ -11,6 +11,6 @@ void free_list(list_t *head)
 	{
 		free(head->str);
 		free(head);
-		head= head->next;
+		head = head->next;
 	}
 }
