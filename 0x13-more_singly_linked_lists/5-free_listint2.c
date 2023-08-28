@@ -5,11 +5,11 @@
  * @head: head of linked list
  */
 
-void free_listint2(listint_t *head)
+void free_listint2(listint_t **head)
 {
 	listint_t *h;
 
-	h = head;
+	h = *head;
 
 	if (h == NULL)
 		return;
