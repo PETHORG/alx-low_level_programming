@@ -3,7 +3,6 @@
 /**
  * free_listint2 - frees a linked list
  * @head: head of a linked list.
- * 
  *
  * Return: no return.
  */

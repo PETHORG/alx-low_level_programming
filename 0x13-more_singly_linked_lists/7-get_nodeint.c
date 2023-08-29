@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * get_nodein⁵t_at_index - returns nth node of linked list
+ * get_nodeint_at_index - returns nth node of linked list
  * @head: head of linked list
  * @index: nth node
  *
