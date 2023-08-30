@@ -1,47 +1,26 @@
 #include "lists.h"
 
 /**
- * delete_nodeint_at_index - delete a node at a given position
- * @head: pointer to head pointer of linked list
- * @index: index to delete node
- * Return: 1 if succeeded, or -1 if failed
+ * pop_listint - deletes the head node, and returns the head node’s data
+ * @head: linked list
+ * Return: deleted head node's data
  */
 
-int delete_nodeint_at_index(listint_t **head, unsigned int index)
+int pop_listint(listint_t **head)
 {
+	int data;
+	listint_t *h;
 
-	unsigned int i = 0;
-	listint_t *tmp, *tmp2;
-
-	/* account for empty list */
 	if (*head == NULL)
-		return (-1);
+		return (0);
 
-	tmp = *head;
+	h = *head;
 
-	/* account for deleting beginning node */
-	if (index == 0)
-	{
-		*head = tmp->next;
-		free(tmp);
-		return (1);
-	}
+	data = h->n;
 
-	/* iterate tmp to idx prior to idx we want to delete */
-	while (i < (index - 1) && tmp != NULL)
-	{
-		tmp = tmp->next;
-		i++;
-	}
+	*head = h->next;
+	free(h);
 
-	/* account for idx out of range: don't delete and return */
-	if (i != (index - 1) || tmp->next == NULL)
-		return (-1);
+	return (data);
 
-	/* link prior idx before delete */
-	tmp2 = tmp->next;
-	tmp->next = (tmp->next)->next;
-	free(tmp2);
-
-	return (1);
 }
