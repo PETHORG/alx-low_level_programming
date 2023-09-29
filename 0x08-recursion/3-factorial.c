@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * factorial - prints the factorial of given number
+ * @n: number parameter
+ *
+ * Return: recursive function
+ */
 
 int factorial(int n)
 {

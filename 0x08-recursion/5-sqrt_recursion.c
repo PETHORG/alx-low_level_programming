@@ -22,7 +22,7 @@ int _sqr(int n, int sqr)
  * _sqrt_recursion - finds the square root of a number n
  * @n: number whose square root is being solved
  *
- * Return: -1 if n is less than 0, a call of another 
+ * Return: -1 if n is less than 0, a call of another
  * function
  */
 
