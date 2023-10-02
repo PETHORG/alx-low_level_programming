@@ -1,6 +1,13 @@
 #include "main.h"
 #include <ctype.h>
 
+/**
+ * main - Entry point
+ * @argc: length of array
+ * @argv: array of arguments
+ *
+ * Return: 0 -Success, 1 -Error
+ */
 
 int main(int argc, char *argv[])
 {
