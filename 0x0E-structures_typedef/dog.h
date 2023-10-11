@@ -5,6 +5,12 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * struct dog - a structure for dog data
+ * @name: a format for name string for name strorage
+ * @age: a format for age declaration
+ * @owner: a format for owner string data storage
+ */
 
 typedef struct dog
 {
