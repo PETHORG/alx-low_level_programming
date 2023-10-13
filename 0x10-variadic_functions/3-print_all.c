@@ -9,21 +9,20 @@
 void print_all(const char * const format, ...)
 {
 	int i = 0;
-	char * str;
-	char * delimiter = "";
+	char *str;
 	va_list vap;
 
-	va_start (vap, format);
+	va_start(vap, format);
 
 	while (format[i])
 	{
 		switch (format[i])
 		{
 			case 'c':
-				putchar((char) va_arg (vap, int));
+				putchar((char) va_arg(vap, int));
 				break;
 			case 's':
-				str = va_arg (vap, char *);
+				str = va_arg(vap, char *);
 				if (str == NULL)
 				{
 					printf("(nil)");
@@ -32,14 +31,14 @@ void print_all(const char * const format, ...)
 				printf("%s, ", str);
 				break;
 			case 'i':
-				printf("%d, ", va_arg (vap, int));
+				printf("%d, ",va_arg(vap, int));
 				break;
 			case 'f':
-				printf("%f, ", (float) va_arg (vap, double));
+				printf("%f, ", (float)va_arg(vap, double));
 				break;
 		}
 		i++;
 	}
 	putchar('\n');
-	va_end (vap);
+	va_end(vap);
 }
