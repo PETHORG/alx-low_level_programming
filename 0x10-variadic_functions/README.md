@@ -1,0 +1,2 @@
+#C - Variadic function
+
